@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Vector;
+
+
+public class shoppingCart {
+	
+	LinkedList<String> cart = new LinkedList<>();
+	LinkedList<Double> cartPrice = new LinkedList<>();
+	
+	public void add(book book) {// make it so the cart only has the titles
+		cart.add(book.title);
+		cartPrice.add(book.price);
+		
+	}
+	public void remove(book book) {
+		cart.remove(book.title);
+		cartPrice.remove(book.price);
+	}
+	public void clear(book book) {
+		cart.clear();
+		cartPrice.clear();
+	}
+	public double totalPrice() {
+		double total=0;
+		
+		for(double price: cartPrice) {
+			total += price;
+		}
+		return total;
+	}
+	public void titleOnly() {
+		for(String title: cart) {
+			System.out.println(title);
+		}
+	}
+	
+	public void view() {
+		System.out.println("Shopping Cart: \n"+ cart + "\n" + cartPrice);
+		System.out.println("SubTotal:" + totalPrice());
+		System.out.println("Total:" +( totalPrice() * 1.07));
+
+	}
+	
+	
+
+}
