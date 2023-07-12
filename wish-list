@@ -1,0 +1,43 @@
+public class WishList {
+    private List<WishListItem> items;
+    private List<String> alerts;
+
+    public WishList() {
+        this.items = new ArrayList<>();
+        this.alerts = new ArrayList<>();
+    }
+
+    public void addItem(String name, String description) {
+        WishListItem item = new WishListItem(name, description, "In Progress");
+        items.add(item);
+        generateAlert("New item added: " + name);
+    }
+
+    public void updateItemStatus(String name, String newStatus) {
+        for (WishListItem item : items) {
+            if (item.getName().equals(name)) {
+                item.setStatus(newStatus);
+                generateAlert("Item status updated: " + name);
+                break;
+            }
+        }
+    }
+
+ private void generateAlert(String message) {
+        alerts.add(message);
+    }
+
+    public List<String> getAlerts() {
+        return alerts;
+    }
+
+    public List<WishListItem> getItemsByStatus(String status) {
+        List<WishListItem> filteredItems = new ArrayList<>();
+        for (WishListItem item : items) {
+            if (item.getStatus().equals(status)) {
+                filteredItems.add(item);
+            }
+        }
+        return filteredItems;
+    }
+}
