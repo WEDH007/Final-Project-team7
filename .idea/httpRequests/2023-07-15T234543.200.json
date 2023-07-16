@@ -1,0 +1,20 @@
+[
+  {
+    "id": 4,
+    "isbn": "1234567890",
+    "name": "Some Book",
+    "description": "A great book about something",
+    "price": 19.99,
+    "author": {
+      "id": 1,
+      "firstName": "Author",
+      "lastName": "Example",
+      "biography": "This is an example author",
+      "publisher": "Example Publisher"
+    },
+    "genre": "Some Genre",
+    "publisher": "Some Publisher",
+    "yearPublished": "2000",
+    "copiesSold": 5000
+  }
+]
