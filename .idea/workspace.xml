@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb5916f6-6f83-4a79-8f86-bb12e3063028" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/book" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCart" beforeDir="false" />
-    </list>
+    <list default="true" id="fb5916f6-6f83-4a79-8f86-bb12e3063028" name="Changes" comment="Book-details feature branch" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +82,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.generated-requests | #3">
+  <component name="RunManager" selected="Application.BookDetailsApplication">
     <configuration name="BookDetailsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.team7.bookdetails.BookDetailsApplication" />
       <module name="book-details" />
@@ -150,8 +145,17 @@
       <workItem from="1689353285098" duration="297000" />
       <workItem from="1689353585155" duration="4060000" />
       <workItem from="1689453369893" duration="684000" />
-      <workItem from="1689478185070" duration="1182000" />
+      <workItem from="1689478185070" duration="1413000" />
     </task>
+    <task id="LOCAL-00001" summary="Book-details feature branch">
+      <option name="closed" value="true" />
+      <created>1689479698803</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689479698803</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +185,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Book-details feature branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Book-details feature branch" />
   </component>
 </project>
