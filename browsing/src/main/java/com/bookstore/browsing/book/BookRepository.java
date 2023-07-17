@@ -11,5 +11,7 @@ public interface BookRepository extends JpaRepository<Book, Integer> {
 	List<Book> findByGenre(String genre);
 	List<Book> findByRatingGreaterThanEqual(float rating);
 	List<Book> findByPublisherName(String publisherName);
+	List<Book> findBySalescount(Integer salescount);
+
 	
 }

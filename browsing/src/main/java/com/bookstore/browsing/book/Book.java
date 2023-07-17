@@ -34,6 +34,18 @@ public class Book {
 
     @Column(name = "price")
     private double price;
+    
+    @Column(name = "salescount")
+    private Integer salescount;
+
+
+	public Integer getSalescount() {
+		return salescount;
+	}
+
+	public void setSalescount(Integer salescount) {
+		this.salescount = salescount;
+	}
 
 	public double getPrice() {
 		// TODO Auto-generated method stub
