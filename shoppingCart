@@ -1,5 +1,7 @@
+package softwareEngineering;
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Scanner;
 import java.util.Vector;
 
 
@@ -7,39 +9,110 @@ public class shoppingCart {
 	
 	LinkedList<String> cart = new LinkedList<>();
 	LinkedList<Double> cartPrice = new LinkedList<>();
+	LinkedList<String> saveList = new LinkedList<>();
+	double subtotal = 0;
+	String code = "";
+	Scanner scan = new Scanner(System.in);
 	
-	public void add(book book) {// make it so the cart only has the titles
+	public void add(book book) {// adds book title to the shopping cart as well as the price
+		if(saveList.contains(book.title)) {//if book is in saveList remove from save list
+			saveList.remove(book.title);
+		}
 		cart.add(book.title);
 		cartPrice.add(book.price);
+		System.out.println(book.title + "has been added to the shipping cart");
 		
 	}
-	public void remove(book book) {
+	public void remove(book book) {//removes book title and price from the shopping cart
 		cart.remove(book.title);
 		cartPrice.remove(book.price);
+		System.out.println(book.title + "has been removed from the shipping cart");
+
 	}
-	public void clear(book book) {
+	public void clear(book book) {//makes the shopping cart empty
 		cart.clear();
 		cartPrice.clear();
+		System.out.println("Shopping cart cleared");
 	}
-	public double totalPrice() {
+	public double totalPrice() {//returns the total price of the items in the shopping cart
 		double total=0;
 		
 		for(double price: cartPrice) {
 			total += price;
 		}
-		return total;
+		if(coupon() == true) {//applies discount if correct code is applied
+			return total - (total * .25);
+		}
+		else {
+			return total;
+		}
 	}
-	public void titleOnly() {
+	public void titleDisplayOnly() {//display shopping cart with only book titles
 		for(String title: cart) {
 			System.out.println(title);
 		}
 	}
+	public void saveForLater(book book) {//moves the books to the saves for later list
+		if(cart.contains(book.title)) {
+			remove(book);
+			saveList.add(book.title);
+			System.out.println(book.title + "has been moved from the shipping cart to the Save for Later List");
+		}
+		else {
+			System.out.println("Book not found in Shopping Cart to be moved");
+		}
+	}
+	public  boolean freeShipping(){ //sees if shopping cart is eligible for free shipping
+		if(totalPrice() > 25) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	public void compareBooks(book book1, book book2) {//compare the price of two books
+		if(book1.price > book2.price) {
+			System.out.println(book1.title + " is $" + (book1.price - book2.price) + " more than " + book2.price);
+		}
+		else if(book1.price < book2.price) {
+			System.out.println(book2.title + " is $" + (book2.price - book1.price) + " more than " + book1.price);
+		}
+		else {
+			System.out.println(book1.price + " is the same price as " + book2.price);
+		}
+		
+	}
+	public void enterCoupon(String discount) {//enter a discount code and see if applicable
+		System.out.println("Enter discount code");
+		code = scan.nextLine();
+		
+		if(code.equals("25OFF")) {
+			System.out.println("Discount Applied");
+		}
+		else {
+			System.out.println("Discount Code not Found");
+
+		}
+	}
 	
-	public void view() {
+	public boolean coupon( ){//sees if discount code has been inserted
+		
+		if(code.equals("25OFF")) {
+			return true;
+		}
+		else {
+			return false;
+		}
+		
+	}
+	
+	public void viewShoppingCart() {//view the entire shopping cart with the subtotal
 		System.out.println("Shopping Cart: \n"+ cart + "\n" + cartPrice);
 		System.out.println("SubTotal:" + totalPrice());
-		System.out.println("Total:" +( totalPrice() * 1.07));
 
+	}
+	public void viewSaveforLater() {
+		System.out.println("Saved for Later: \n" + saveList);
 	}
 	
 	
