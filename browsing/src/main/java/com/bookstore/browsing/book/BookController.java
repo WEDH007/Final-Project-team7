@@ -33,12 +33,10 @@ public class BookController {
         return bookService.getBooksByGenre(genre);
     }
 
-	/*
-	 * // Retrieve List of Top Sellers
-	 * 
-	 * @GetMapping("/top-sellers") public List<Book> getTopSellers() { return
-	 * bookService.getTopSellers(); }
-	 */
+    @GetMapping("/top-sellers")
+    public List<Book> getTopSellingBooks() {
+        return bookService.getTopSellingBooks(10);
+    }
 
     // Retrieve List of Books for a particular rating and higher
     @GetMapping("/rating/{rating}")

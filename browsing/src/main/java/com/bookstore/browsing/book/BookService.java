@@ -1,6 +1,8 @@
 package com.bookstore.browsing.book;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
@@ -36,10 +38,17 @@ public class BookService {
         return bookRepository.findByGenre(genre);
     }
 
-	/*
-	 * public List<Book> getTopSellers() { // You would need to track sales data in
-	 * your model to implement this method }
-	 */
+    public List<Book> getTopSellingBooks(int limit) {
+        Sort sortBySalescountDesc = Sort.by(Sort.Direction.DESC, "salescount");
+        PageRequest pageRequest = PageRequest.of(0, limit, sortBySalescountDesc);
+        return bookRepository.findAll(pageRequest).getContent();
+    }
+
+    
+    public List<Book> getBooksBySalescount(int salescount) {
+        return bookRepository.findBySalescount(salescount);
+    }
+
 
     public List<Book> getBooksByRating(float rating) {
         return bookRepository.findByRatingGreaterThanEqual(rating);
