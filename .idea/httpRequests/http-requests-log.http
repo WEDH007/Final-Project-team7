@@ -1,0 +1,66 @@
+POST http://localhost:8080/books:
+{:
+ "isbn": "123-456-789",
+ "name": "Great Book",
+ "description": "A description of the book",
+ "price": 19.99,
+ "author":
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-15T234909.400.html
+
+###
+
+POST http://localhost:8080/books:
+{:
+ "isbn": "123-456-789",
+ "name": "Great Book",
+ "description": "A description of the book",
+ "price": 19.99,
+ "author":
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-15T234853.400.html
+
+###
+
+POST http://localhost:8080/books
+{:
+ "isbn": "123-456-789",
+ "name": "Great Book",
+ "description": "A description of the book",
+ "price": 19.99,
+ "author":
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-15T234834.400.html
+
+###
+
+GET http://localhost:8080/books/1234567890
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-15T234735.200.json
+
+###
+
+GET http://localhost:8080/authors/1/books
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-07-15T234543.200.json
+
+###
+
