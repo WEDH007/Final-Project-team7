@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <setting name="provider-name" value="Hibernate" />
+        <datasource-mapping />
+        <naming-strategy-map />
+        <deploymentDescriptor name="orm.xml" url="file://$MODULE_DIR$/.idea/META-INF/orm.xml" />
+        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/.idea/META-INF/persistence.xml" />
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-core/4.0.0.RELEASE/spring-batch-core-4.0.0.RELEASE.jar!/beanRefContext.xml</file>
+          <file>jar://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-core/4.0.0.RELEASE/spring-batch-core-4.0.0.RELEASE.jar!/jsrBaseContext.xml</file>
+          <file>file://$MAVEN_REPOSITORY$/org/springframework/batch/spring-batch-core/4.0.0.RELEASE/spring-batch-core-4.0.0.RELEASE.jar</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/book-details" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="JUnit5.8.1">
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="springframework.amqp.spring" level="project" />
+    <orderEntry type="library" name="springframework.spring.beans" level="application" />
+    <orderEntry type="library" name="springframework.batch.spring.core" level="project" />
+    <orderEntry type="library" name="JPA 1.0-JPA 1.0" level="project" />
+    <orderEntry type="library" name="jakarta.persistence.api" level="project" />
+    <orderEntry type="library" name="springframework.webflow.binding" level="project" />
+    <orderEntry type="library" name="springframework.boot.spring" level="project" />
+    <orderEntry type="library" name="springframework.boot.spring.test" level="project" />
+    <orderEntry type="module-library">
+      <library name="spring-boot-starter-web">
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/3.1.1/spring-boot-starter-web-3.1.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter/3.1.1/spring-boot-starter-3.1.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/3.1.1/spring-boot-3.1.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/3.1.1/spring-boot-autoconfigure-3.1.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/3.1.1/spring-boot-starter-logging-3.1.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.4.8/logback-classic-1.4.8.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/1.4.8/logback-core-1.4.8.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-to-slf4j/2.20.0/log4j-to-slf4j-2.20.0.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.20.0/log4j-api-2.20.0.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jul-to-slf4j/2.0.7/jul-to-slf4j-2.0.7.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/6.0.10/spring-core-6.0.10.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jcl/6.0.10/spring-jcl-6.0.10.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-json/3.1.1/spring-boot-starter-json-3.1.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.15.2/jackson-databind-2.15.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.15.2/jackson-annotations-2.15.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.15.2/jackson-core-2.15.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.2/jackson-datatype-jdk8-2.15.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.2/jackson-datatype-jsr310-2.15.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.2/jackson-module-parameter-names-2.15.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-tomcat/3.1.1/spring-boot-starter-tomcat-3.1.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/10.1.10/tomcat-embed-core-10.1.10.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-el/10.1.10/tomcat-embed-el-10.1.10.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.10/tomcat-embed-websocket-10.1.10.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/6.0.10/spring-web-6.0.10.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/6.0.10/spring-beans-6.0.10.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/io/micrometer/micrometer-observation/1.10.8/micrometer-observation-1.10.8.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/io/micrometer/micrometer-commons/1.10.8/micrometer-commons-1.10.8.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/6.0.10/spring-webmvc-6.0.10.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/6.0.10/spring-aop-6.0.10.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/6.0.10/spring-context-6.0.10.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/6.0.10/spring-expression-6.0.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="springframework.data.build.spring.java8.stub" level="project" />
+    <orderEntry type="library" name="springframework.data.spring.jpa" level="application" />
+    <orderEntry type="library" name="ch.qos.logback.access" level="project" />
+  </component>
+</module>
