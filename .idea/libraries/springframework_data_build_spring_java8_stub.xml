@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="springframework.data.build.spring.java8.stub" type="repository">
+    <properties maven-id="org.springframework.data.build:spring-data-java8-stub:1.4.6.RELEASE" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/build/spring-data-java8-stub/1.4.6.RELEASE/spring-data-java8-stub-1.4.6.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
