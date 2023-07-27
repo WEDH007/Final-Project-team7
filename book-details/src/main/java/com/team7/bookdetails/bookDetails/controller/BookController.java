@@ -15,8 +15,9 @@ public class BookController {
     private BookService bookService;
 
     @PostMapping
-    public ResponseEntity<Book> createBook(@RequestBody Book book) {
-        return ResponseEntity.ok(bookService.saveBook(book));
+    public ResponseEntity<Void> createBook(@RequestBody Book book) {
+        bookService.saveBook(book);
+        return ResponseEntity.ok().build();
     }
 
     @GetMapping("/{isbn}")
